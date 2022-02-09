@@ -43,6 +43,13 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::food.food"
+    },
+    "headerimage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

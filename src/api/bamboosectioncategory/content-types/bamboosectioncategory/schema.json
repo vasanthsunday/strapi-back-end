@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bamboosectioncategories",
+  "info": {
+    "singularName": "bamboosectioncategory",
+    "pluralName": "bamboosectioncategories",
+    "displayName": "BambooSectionCategory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "category_id": {
+      "type": "integer"
+    },
+    "category_title": {
+      "type": "string"
+    },
+    "category_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "category_description": {
+      "type": "string"
+    },
+    "category_headerimage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "bamboo_section": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::bamboosection.bamboosection"
+    }
+  }
+}
