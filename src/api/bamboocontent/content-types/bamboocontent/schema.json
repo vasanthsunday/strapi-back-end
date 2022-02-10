@@ -22,32 +22,36 @@
       "type": "string"
     },
     "html": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "files"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "docx": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "files"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "jpg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "pdf": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "files"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "content_url": {
       "type": "string"
@@ -75,9 +79,6 @@
     "publisher_url": {
       "type": "string"
     },
-    "publisher_image": {
-      "type": "string"
-    },
     "content_author": {
       "type": "string"
     },
@@ -85,6 +86,50 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::bamboosection.bamboosection"
+    },
+    "social_share": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "preview": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "content_investable_assets": {
+      "type": "string"
+    },
+    "content_public_filetypes": {
+      "type": "string"
+    },
+    "content_expiration_date": {
+      "type": "datetime"
+    },
+    "content_type": {
+      "type": "string"
+    },
+    "content_update_reason": {
+      "type": "string"
+    },
+    "Publisher_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "bamboo_tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::bambootag.bambootag"
     }
   }
 }
